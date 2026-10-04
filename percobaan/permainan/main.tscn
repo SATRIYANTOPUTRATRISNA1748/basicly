@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://cjic7ko0mhhhw"]
+
+[ext_resource type="Texture2D" uid="uid://bssfrqldedwgk" path="res://sumber/gambar/horor.png" id="1_1h430"]
+[ext_resource type="Script" uid="uid://p0uutuw4p5bd" path="res://coding/mantap.gd" id="1_pgkva"]
+[ext_resource type="Texture2D" uid="uid://beb70n2n7f8lf" path="res://sumber/gambar/orang.png" id="2_pgkva"]
+[ext_resource type="Texture2D" uid="uid://c7gekr5xjwu77" path="res://sumber/gambar/maju.png" id="3_v5ljk"]
+[ext_resource type="Texture2D" uid="uid://ccfi3b5tiwbpf" path="res://sumber/gambar/kanan.png" id="4_a2c8v"]
+[ext_resource type="Texture2D" uid="uid://6nlrbe3y2nl4" path="res://sumber/gambar/kiri.png" id="5_0u1ad"]
+[ext_resource type="Texture2D" uid="uid://c70nn3lapvg3r" path="res://sumber/gambar/mundur.png" id="6_f3j3b"]
+
+[node name="Maim" type="Node2D" unique_id=1339978141]
+script = ExtResource("1_pgkva")
+
+[node name="Horor" type="Sprite2D" parent="." unique_id=789368411]
+position = Vector2(-753.99994, -211)
+scale = Vector2(15.887095, 11.261194)
+texture = ExtResource("1_1h430")
+
+[node name="Orang" type="Sprite2D" parent="." unique_id=1468393903]
+position = Vector2(636, -20.999998)
+scale = Vector2(6.9935064, 4.142157)
+texture = ExtResource("2_pgkva")
+
+[node name="Maju" type="Sprite2D" parent="." unique_id=1127039176]
+position = Vector2(-1900, 33)
+scale = Vector2(0.7837209, 0.55803573)
+texture = ExtResource("3_v5ljk")
+
+[node name="tambah" type="Button" parent="Maju" unique_id=1215593600]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -207.0
+offset_bottom = -216.0
+
+[node name="Kanan" type="Sprite2D" parent="." unique_id=1859599635]
+position = Vector2(-1660.25, 194.5)
+scale = Vector2(0.7595238, 0.48863637)
+texture = ExtResource("4_a2c8v")
+
+[node name="piti" type="Button" parent="Kanan" unique_id=669516277]
+anchors_preset = -1
+anchor_left = 0.208
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -43.68
+offset_right = -202.0
+offset_bottom = -256.0
+
+[node name="Kiri" type="Sprite2D" parent="." unique_id=478632844]
+position = Vector2(-2135.375, 196.375)
+scale = Vector2(1.5467045, 0.93686897)
+texture = ExtResource("5_0u1ad")
+
+[node name="pita" type="Button" parent="Kiri" unique_id=744053144]
+anchors_preset = -1
+anchor_left = 0.25500003
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -23.205002
+offset_right = -73.94763
+offset_bottom = -91.0
+
+[node name="Mundur" type="Sprite2D" parent="." unique_id=1261768287]
+position = Vector2(-1887.625, 370.00003)
+scale = Vector2(1.0842253, 0.8157896)
+texture = ExtResource("6_f3j3b")
+
+[node name="kurang" type="Button" parent="Mundur" unique_id=410072983]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -179.0
+offset_bottom = -68.0
+grow_horizontal = 2
+grow_vertical = 2

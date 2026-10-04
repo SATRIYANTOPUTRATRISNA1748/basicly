@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://b3kv0sqbd7k06"]
+
+[ext_resource type="Texture2D" uid="uid://cf3g2o0e8ytfv" path="res://sumber/gambar/latar.png" id="1_khob0"]
+[ext_resource type="Texture2D" uid="uid://bh36ni4geox5g" path="res://sumber/gambar/mulai.png" id="2_ku3wr"]
+[ext_resource type="Texture2D" uid="uid://hptqwynqr6ws" path="res://sumber/gambar/keluar.png" id="3_d558w"]
+[ext_resource type="Script" uid="uid://cphdp0fv6dkv5" path="res://coding/mulai.gd" id="3_nnf43"]
+[ext_resource type="Script" uid="uid://blxgy5ljfjxq6" path="res://coding/keluar.gd" id="5_fmp8j"]
+
+[node name="Menu" type="Node2D" unique_id=1515129526]
+
+[node name="Latar" type="Sprite2D" parent="." unique_id=949820615]
+position = Vector2(737, 440.99997)
+scale = Vector2(4.301298, 4.120155)
+texture = ExtResource("1_khob0")
+
+[node name="Control" type="Control" parent="." unique_id=2002209798]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -22.0
+offset_top = 83.0
+offset_right = 18.0
+offset_bottom = 123.0
+
+[node name="Mulai" type="Sprite2D" parent="Control" unique_id=1693467192]
+position = Vector2(757.00006, 221)
+scale = Vector2(3.150943, 1.7117647)
+texture = ExtResource("2_ku3wr")
+
+[node name="mulai2" type="Button" parent="Control/Mulai" unique_id=902157270]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -204.0
+offset_bottom = -77.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_nnf43")
+
+[node name="Keluar" type="Sprite2D" parent="Control/Mulai" unique_id=978811194]
+position = Vector2(1.5868146, 146.63232)
+scale = Vector2(0.7359716, 1.241409)
+texture = ExtResource("3_d558w")
+
+[node name="keluar2" type="Button" parent="Control/Mulai" unique_id=668031973]
+anchors_preset = -1
+anchor_left = 0.155
+anchor_top = 1.6470001
+anchor_right = 0.906
+anchor_bottom = 2.6190002
+offset_left = -32.86
+offset_top = -139.99501
+offset_right = -184.072
+offset_bottom = -214.61502
+script = ExtResource("5_fmp8j")
+
+[connection signal="button_up" from="Control/Mulai/mulai2" to="Control/Mulai/mulai2" method="_on_button_up"]
+[connection signal="pressed" from="Control/Mulai/mulai2" to="Control/Mulai/mulai2" method="_on_pressed"]
+[connection signal="pressed" from="Control/Mulai/keluar2" to="Control/Mulai/mulai2" method="_on_keluar_2_pressed"]
